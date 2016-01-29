@@ -14,7 +14,7 @@ At the end of the year I will give a presentation of my platformer game. Dependi
 | Date          | Deliverable   |
 | ------------- | ------------- |
 | February 26   | Have my ideas for the game finalized and have learned some basics of Unity.|
-| April 1       | Be complete with the sprites of the game and have 5 levels created. Game might not yet be functional.|
+| April 1       | Be complete with the sprites of the game and have 5 levels created. Game might not be entirely functional yet.|
 | April 29      | Have all components of my game completed, and begin testing looking for feedback and improvement opportunities.|
 
 ## Reality Check
