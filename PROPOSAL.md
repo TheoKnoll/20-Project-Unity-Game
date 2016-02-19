@@ -1,5 +1,5 @@
 # Proposal: Unity Game
-## 30 Level 3D Platformer Game using Unity
+## Multi-Level 3D Platformer Game using Unity
 Theo Knoll
 
 ## Needs and Opportunities
@@ -13,9 +13,9 @@ At the end of the year I will give a presentation of my platformer game. Dependi
 ## Timeline
 | Date          | Deliverable   |
 | ------------- | ------------- |
-| February 26   | Have my ideas for the game finalized and have learned some basics of Unity.|
-| April 1       | Be complete with the sprites of the game and have 5 levels created. Game might not be entirely functional yet.|
-| April 29      | Have all components of my game completed, and begin testing looking for feedback and improvement opportunities.|
+| February 26   | Have my ideas for the game finalized with a sheet written out of a formal plan for the game and have learned some basics of Unity.|
+| April 1       | Be complete with the models of the game and have 5 levels created. Game might not be entirely functional yet, but should have a method to be able to move successfully at this point for sure.|
+| April 29      | Have all components of my game completed, and begin testing, looking for feedback, and other improvement opportunities.|
 
 ## Reality Check
 One of the reasons I am excited to make a game and see how it does is because the software that I need to program it doesn’t cost any money. This would be a major constraint with some other projects, which is why I decided to stick with something free. In terms of project difficulty, it will be hard to learn how to use Unity (as I have never used it before) but I think it’s worth it to learn a practicality of coding. It’s great if I can get an A in Computer Science, but at the end of the day I want to be able to apply what I’ve learned, not just be able to make a basic program that can do calculations with binary numbers.
