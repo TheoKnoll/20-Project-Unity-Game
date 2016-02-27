@@ -26,6 +26,7 @@ Different colored platforms will have different effects on the player. Colors ha
 | Blue   | Standard platform.|
 ###PowerUps
 There will be pickupable items that allow you to use certain powers when activated.
+###PowerUp Types
 | Item        | Item Effect   |
 | ------------- | ------------- |
 | Light Blue Sphere   | Temporary shield for player that lasts until an enemy is hit.|
