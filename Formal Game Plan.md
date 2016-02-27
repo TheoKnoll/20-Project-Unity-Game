@@ -35,4 +35,4 @@ There will be pickupable items that allow you to use certain powers when activat
 | Dotted Sphere   | Shrinks player.|
 | Striped Sphere   | Enlarges player.|
 ###Goal
-Get to the end of the level by avoid gaps in the platforms and the enemies.
+Get to the end of the level by avoiding gaps in the platforms and the enemies.
