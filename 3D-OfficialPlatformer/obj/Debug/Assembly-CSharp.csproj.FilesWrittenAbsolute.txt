@@ -1,0 +1,17 @@
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/obj/Debug/Assembly-CSharp.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/UnityEngine.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/UnityEditor.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Mono.Cecil.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Unity.DataContract.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/theo/Documents/GitHub/20-Project-Unity-Game/3D-OfficialPlatformer/Temp/bin/Debug/Mono.Cecil.Mdb.dll
