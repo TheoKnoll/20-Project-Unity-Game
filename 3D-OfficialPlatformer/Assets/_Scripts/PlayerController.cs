@@ -6,10 +6,13 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public float jumpHeight;
 	private bool grounded;
+
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		grounded = true;
+	
 	}
 
 
@@ -24,8 +27,8 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate()
 	{
 		float moveHor = Input.GetAxis ("Horizontal");
-		float moveVert = Input.GetAxis ("Vertical");
-		Vector3 movement = new Vector3 (moveHor, 0.0f, moveVert);
+		//float moveVert = Input.GetAxis ("Vertical");
+		Vector3 movement = new Vector3 (moveHor, 0.0f, 0.0f);
 		rb.AddForce (movement * speed);
 
 			}
@@ -48,11 +51,6 @@ public class PlayerController : MonoBehaviour {
 			}
 
 					}
-	/*void OnColliderEnter(Collider other){
-		if(other.gameObject.CompareTag("RespawnGame")){
-			Destroy (gameObject);
-			Application.LoadLevel (Application.loadedLevel);
-		}
-	}*/
+
 
 	}
