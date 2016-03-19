@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		grounded = true;
-	
 	}
 
 
@@ -30,7 +29,9 @@ public class PlayerController : MonoBehaviour {
 		//float moveVert = Input.GetAxis ("Vertical");
 		Vector3 movement = new Vector3 (moveHor, 0.0f, 0.0f);
 		rb.AddForce (movement * speed);
-
+		if(rb.velocity.z < 15){
+			rb.AddForce (new Vector3 (0.0f, 0.0f, 10f));
+		}
 			}
 
 
