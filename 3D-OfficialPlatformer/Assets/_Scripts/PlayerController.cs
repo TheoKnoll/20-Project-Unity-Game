@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.Space) && grounded ==true){
+		if(Input.GetKeyDown(KeyCode.Space) && (grounded ==true )){
 			Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
 			rb.AddForce(jump);
 		}
@@ -48,10 +48,20 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionExit(Collision other){
 		if(other.gameObject.CompareTag("Ground")){
+			
 				grounded = false;
+
 			}
 
 					}
+
+	void OnCollisionStay(Collision other){
+		if(other.gameObject.CompareTag("Ground")){
+
+			grounded = true;
+
+		}
+	}
 
 
 	}
