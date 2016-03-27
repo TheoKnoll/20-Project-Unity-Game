@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 	private Rigidbody rb;
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.Space) && (grounded ==true )){
+		if(Input.GetKeyDown(KeyCode.Space) && (grounded == true )){
 			Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
 			rb.AddForce(jump);
 		}
@@ -41,7 +42,8 @@ public class PlayerController : MonoBehaviour {
 			grounded = true;
 		}
 		else if(other.gameObject.CompareTag("RespawnGame")){
-			Application.LoadLevel (Application.loadedLevel);
+		//	Application.LoadLevel (Application.loadedLevel);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 
 	}

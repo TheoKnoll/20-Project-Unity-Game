@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\CameraFollowPlayer.cs" />
+     <Compile Include="Assets\_Scripts\FinalPlatform.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
