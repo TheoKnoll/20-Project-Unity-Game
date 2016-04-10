@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/JumpingSideways.unity
+- path: Assets/_Scenes/New1stLevel.unity
   isLoaded: 1
   isActive: 1
