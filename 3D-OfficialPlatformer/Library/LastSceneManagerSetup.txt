@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/New1stLevel.unity
+- path: Assets/_Scenes/TinyPlatformsToJump.unity
   isLoaded: 1
   isActive: 1
