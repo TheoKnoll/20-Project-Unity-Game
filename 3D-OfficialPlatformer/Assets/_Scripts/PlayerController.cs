@@ -45,6 +45,10 @@ public class PlayerController : MonoBehaviour {
 		//	Application.LoadLevel (Application.loadedLevel);
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
+		else if(other.gameObject.CompareTag("RespawnEnemy")){
+			rb.AddForce (new Vector3 (0.0f, 0.0f, 15f));
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
 
 	}
 
