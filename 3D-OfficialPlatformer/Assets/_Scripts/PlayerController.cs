@@ -7,12 +7,18 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public float jumpHeight;
 	private bool grounded;
+	private float speedlimit;
+	private float speedmax;
+	//private Renderer ren;
 
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
+		//ren = GetComponent<Renderer> ();
 		grounded = true;
+		speedlimit = 10f;
+		speedmax = 15;
 	}
 
 
@@ -30,8 +36,8 @@ public class PlayerController : MonoBehaviour {
 		//float moveVert = Input.GetAxis ("Vertical");
 		Vector3 movement = new Vector3 (moveHor, 0.0f, 0.0f);
 		rb.AddForce (movement * speed);
-		if(rb.velocity.z < 15){
-			rb.AddForce (new Vector3 (0.0f, 0.0f, 10f));
+		if(rb.velocity.z < speedmax){
+			rb.AddForce (new Vector3 (0.0f, 0.0f, speedlimit));
 		}
 			}
 
@@ -48,6 +54,11 @@ public class PlayerController : MonoBehaviour {
 		else if(other.gameObject.CompareTag("RespawnEnemy")){
 			rb.AddForce (new Vector3 (0.0f, 0.0f, 15f));
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+		else if(other.gameObject.CompareTag("SpeedPowerUp")){
+			//ren.material.color = Color32(255, 100, 0, 255);
+			speedmax *= 2;
+			speedlimit *= 2;
 		}
 
 	}

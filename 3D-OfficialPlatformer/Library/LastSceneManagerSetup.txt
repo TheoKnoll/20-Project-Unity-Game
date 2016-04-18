@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/New1stLevel.unity
+- path: Assets/_Scenes/1st PowerUp Level.unity
   isLoaded: 1
   isActive: 1
