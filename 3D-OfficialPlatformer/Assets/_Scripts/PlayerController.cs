@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 	private float speedmax;
 	private Renderer ren;
 	private float sideSpeed;
+	private bool isPaused;
 
 
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour {
 		speedlimit = 10f;
 		speedmax = 15;
 		sideSpeed = 1;
+		isPaused = false;
 	}
 
 
@@ -29,6 +31,9 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Space) && (grounded == true )){
 			Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
 			rb.AddForce(jump);
+		}
+		else if(Input.GetKeyDown(KeyCode.P)){
+			Pause ();
 		}
 	}
 
@@ -86,6 +91,20 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
+
+	}
+
+	void Pause(){
+		if(isPaused == true){
+			print ("Unpaused");
+			Time.timeScale = 1.0f;
+			isPaused = false;
+		}
+		else{
+			print("Paused");
+			Time.timeScale = 0.0f;
+			isPaused = true;
+		}
 
 	}
 }
