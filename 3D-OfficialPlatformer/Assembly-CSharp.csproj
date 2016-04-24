@@ -45,9 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\BallSpawn.cs" />
      <Compile Include="Assets\_Scripts\CameraFollowPlayer.cs" />
+     <Compile Include="Assets\_Scripts\DestroySpawnBalls.cs" />
      <Compile Include="Assets\_Scripts\FinalPlatform.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
+     <Compile Include="Assets\_Scripts\PowerUpScripts.cs" />
+     <Compile Include="Assets\_Scripts\quitMenu.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

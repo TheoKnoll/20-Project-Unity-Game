@@ -9,16 +9,18 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded;
 	private float speedlimit;
 	private float speedmax;
-	//private Renderer ren;
+	private Renderer ren;
+	private float sideSpeed;
 
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
-		//ren = GetComponent<Renderer> ();
+		ren = GetComponent<Renderer> ();
 		grounded = true;
 		speedlimit = 10f;
 		speedmax = 15;
+		sideSpeed = 1;
 	}
 
 
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		float moveHor = Input.GetAxis ("Horizontal");
 		//float moveVert = Input.GetAxis ("Vertical");
-		Vector3 movement = new Vector3 (moveHor, 0.0f, 0.0f);
+		Vector3 movement = new Vector3 (moveHor*sideSpeed, 0.0f, 0.0f);
 		rb.AddForce (movement * speed);
 		if(rb.velocity.z < speedmax){
 			rb.AddForce (new Vector3 (0.0f, 0.0f, speedlimit));
@@ -55,11 +57,6 @@ public class PlayerController : MonoBehaviour {
 			rb.AddForce (new Vector3 (0.0f, 0.0f, 15f));
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
-		else if(other.gameObject.CompareTag("SpeedPowerUp")){
-			//ren.material.color = Color32(255, 100, 0, 255);
-			speedmax *= 2;
-			speedlimit *= 2;
-		}
 
 	}
 
@@ -79,6 +76,16 @@ public class PlayerController : MonoBehaviour {
 
 		}
 	}
+	void OnTriggerEnter(Collider other) {
+		if(other.gameObject.CompareTag("SpeedPowerUp")){
+			ren.material.color = Color.magenta;
+			speedmax *= 2;
+			speedlimit *= 2;
+			sideSpeed *= 2;
+			other.gameObject.SetActive(false);
+
+		}
 
 
 	}
+}
