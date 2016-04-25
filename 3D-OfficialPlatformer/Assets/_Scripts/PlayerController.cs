@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.P)){
 			Pause ();
 		}
+		else if(Input.GetKeyDown(KeyCode.M)){
+			LoadMenu ();
+		}
 	}
 
 	void FixedUpdate()
@@ -106,5 +109,8 @@ public class PlayerController : MonoBehaviour {
 			isPaused = true;
 		}
 
+	}
+	void LoadMenu(){
+		SceneManager.LoadScene(1);
 	}
 }

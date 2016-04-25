@@ -49,6 +49,7 @@
      <Compile Include="Assets\_Scripts\CameraFollowPlayer.cs" />
      <Compile Include="Assets\_Scripts\DestroySpawnBalls.cs" />
      <Compile Include="Assets\_Scripts\FinalPlatform.cs" />
+     <Compile Include="Assets\_Scripts\InGameMenu.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
      <Compile Include="Assets\_Scripts\PowerUpScripts.cs" />
      <Compile Include="Assets\_Scripts\quitMenu.cs" />
