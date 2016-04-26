@@ -113,4 +113,5 @@ public class PlayerController : MonoBehaviour {
 	void LoadMenu(){
 		SceneManager.LoadScene(1);
 	}
+
 }
