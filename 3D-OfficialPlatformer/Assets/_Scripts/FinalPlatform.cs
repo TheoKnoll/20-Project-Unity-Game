@@ -3,17 +3,24 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class FinalPlatform : MonoBehaviour {
-	private static bool beat1 = false, beat2 = false, beat3 = false, beat4 = false, beat5 = false, beat6 = false, beat7 = false, beat8 = false, beat9 = false, beat10 = false, beat11 = false, beat12 = false, beat13 = false;
+	private static int[] levelsBeat = new int[13];
+	private static bool done = false;
 
-	void Start(){
-		
-
+	void Awake(){
+		if(SceneManager.GetActiveScene ().buildIndex == 2 && done == false){
+			for(int x= 0; x < levelsBeat.Length; x++){
+				levelsBeat [x] = -1;
+			}
+			done = true;
+		}
 	}
 	void Update(){
 		if(Input.GetKeyDown("n")){
 			if (SceneManager.GetActiveScene ().buildIndex != 14) {
+				LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 			} else {
+				LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 				CheckWin();
 			}
 		}
@@ -23,36 +30,50 @@ public class FinalPlatform : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.CompareTag("Player")){
+			LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 			if (SceneManager.GetActiveScene ().buildIndex != 14) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 			} else {
+				LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 				CheckWin ();
 
 			}
-			LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 		}
 	}
 	void LevelBeat(int x){
-		if(x == 2){beat1 = true;}
-		else if(x == 3){beat2 = true;}
-		else if(x == 4){beat3 = true;}
-		else if(x == 5){beat4 = true;}
-		else if(x == 6){beat5 = true;}
-		else if(x == 7){beat6 = true;}
-		else if(x == 8){beat7 = true;}
-		else if(x == 9){beat8 = true;}
-		else if(x == 10){beat9 = true;}
-		else if(x == 11){beat10 = true;}
-		else if(x == 12){beat11 = true;}
-		else if(x == 13){beat12 = true;}
-		else if(x == 14){beat13 = true;}
+		if(CheckBeat(x) == false){
+		for(int y = 0; y < levelsBeat.Length; y++){
+			if(levelsBeat[y] == -1){levelsBeat[y] = (x-1);
+				break;}
+		}
+		}
 	}
 
 	void CheckWin(){
-		if (beat1 == true && beat2 == true && beat3 == true && beat4 == true && beat5 == true && beat6 == true && beat7 == true && beat8 == true && beat9 == true && beat10 == true && beat11 == true && beat12 == true && beat13) {
+		if(containsAll() == true){
 			SceneManager.LoadScene (15);
-		} else {
+		}
+		else{
 			SceneManager.LoadScene (1);
 		}
+
+	}
+
+	public bool CheckBeat(int x){
+		for(int y = 0; y<levelsBeat.Length; y++){
+			if(x == levelsBeat[y]){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	bool containsAll(){
+		for(int x = 1; x<14; x++){
+			if (CheckBeat(x) == false) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
