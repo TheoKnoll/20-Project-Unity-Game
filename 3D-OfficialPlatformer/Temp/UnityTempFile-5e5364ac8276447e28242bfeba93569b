@@ -85,6 +85,7 @@
 'Assets/_Scripts/InGameMenu.cs'
 'Assets/_Scripts/PlayerController.cs'
 'Assets/_Scripts/PowerUpScripts.cs'
+'Assets/_Scripts/WonSceneMenu.cs'
 'Assets/_Scripts/quitMenu.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

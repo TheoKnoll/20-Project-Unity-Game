@@ -7,7 +7,7 @@ public class FinalPlatform : MonoBehaviour {
 	private static bool done = false;
 
 	void Awake(){
-		if(SceneManager.GetActiveScene ().buildIndex == 2 && done == false){
+		if((SceneManager.GetActiveScene ().buildIndex == 1 || SceneManager.GetActiveScene ().buildIndex == 2 ) && done == false){
 			for(int x= 0; x < levelsBeat.Length; x++){
 				levelsBeat [x] = -1;
 			}

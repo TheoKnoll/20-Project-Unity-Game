@@ -49,79 +49,79 @@ public class InGameMenu : MonoBehaviour {
 
 	public void Load1(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+			SceneManager.LoadScene(2);
 
 			}
 
 	public void Load2(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+2);
+			SceneManager.LoadScene(3);
 
 	}
 
 	public void Load3(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+3);
+			SceneManager.LoadScene(4);
 
 	}
 
 	public void Load4(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+4);
+			SceneManager.LoadScene(5);
 
 	}
 
 	public void Load5(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+5);
+			SceneManager.LoadScene(6);
 
 	}
 
 	public void Load6(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+6);
+			SceneManager.LoadScene(7);
 
 	}
 
 	public void Load7(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+7);
+			SceneManager.LoadScene(8);
 
 	}
 
 	public void Load8(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+8);
+			SceneManager.LoadScene(9);
 
 	}
 
 	public void Load9(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+9);
+			SceneManager.LoadScene(10);
 
 	}
 
 	public void Load10(){
 		
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+10);
+			SceneManager.LoadScene(11);
 
 	}
 
 	public void Load11(){
 
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+11);
+		SceneManager.LoadScene(12);
 
 	}
 
 	public void Load12(){
 
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+12);
+		SceneManager.LoadScene(13);
 
 	}
 
 	public void Load13(){
 
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+13);
+		SceneManager.LoadScene(14);
 
 	}
 }

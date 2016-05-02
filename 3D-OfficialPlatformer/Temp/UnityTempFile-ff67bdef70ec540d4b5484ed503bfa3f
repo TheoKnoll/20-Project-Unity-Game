@@ -83,6 +83,7 @@
 'Assets/_Scripts/DestroySpawnBalls.cs'
 'Assets/_Scripts/FinalPlatform.cs'
 'Assets/_Scripts/InGameMenu.cs'
+'Assets/_Scripts/InGameMenu1.cs'
 'Assets/_Scripts/PlayerController.cs'
 'Assets/_Scripts/PowerUpScripts.cs'
 'Assets/_Scripts/quitMenu.cs'
