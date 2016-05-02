@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class FinalPlatform : MonoBehaviour {
-	private static int[] levelsBeat = new int[13];
+	private static int[] levelsBeat = new int[14];
 	private static bool done = false;
 
 	void Awake(){
@@ -16,7 +16,7 @@ public class FinalPlatform : MonoBehaviour {
 	}
 	void Update(){
 		if(Input.GetKeyDown("n")){
-			if (SceneManager.GetActiveScene ().buildIndex != 14) {
+			if (SceneManager.GetActiveScene ().buildIndex != 15) {
 				LevelBeat (SceneManager.GetActiveScene ().buildIndex);
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 			} else {
@@ -31,7 +31,7 @@ public class FinalPlatform : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.CompareTag("Player")){
 			LevelBeat (SceneManager.GetActiveScene ().buildIndex);
-			if (SceneManager.GetActiveScene ().buildIndex != 14) {
+			if (SceneManager.GetActiveScene ().buildIndex != 15) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 			} else {
 				LevelBeat (SceneManager.GetActiveScene ().buildIndex);
@@ -69,7 +69,7 @@ public class FinalPlatform : MonoBehaviour {
 	}
 
 	bool containsAll(){
-		for(int x = 1; x<14; x++){
+		for(int x = 1; x<15; x++){
 			if (CheckBeat(x) == false) {
 				return false;
 			}

@@ -124,4 +124,10 @@ public class InGameMenu : MonoBehaviour {
 		SceneManager.LoadScene(14);
 
 	}
+
+	public void Load14(){
+
+		SceneManager.LoadScene(15);
+
+	}
 }

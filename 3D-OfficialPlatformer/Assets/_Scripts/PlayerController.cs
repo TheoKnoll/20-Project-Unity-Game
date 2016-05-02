@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 		else if(Input.GetKeyDown(KeyCode.P)){
 			Pause ();
 		}
-		else if(Input.GetKeyDown(KeyCode.M)){
+		else if(Input.GetKeyDown(KeyCode.M)||Input.GetKeyDown(KeyCode.Q)|| Input.GetKeyDown(KeyCode.Escape)){
 			LoadMenu ();
 		}
 	}
