@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/InGameMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/FinalPlatform.cs">
     <Files>
+      <File FileName="Assets/_Scripts/quitMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/InGameMenu.cs" Line="142" Column="28" />
       <File FileName="Assets/_Scripts/BallSpawn.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/CameraFollowPlayer.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/PlayerController.cs" Line="39" Column="16" />
-      <File FileName="Assets/_Scripts/quitMenu.cs" Line="36" Column="3" />
-      <File FileName="Assets/_Scripts/DestroySpawnBalls.cs" Line="10" Column="4" />
-      <File FileName="Assets/_Scripts/FinalPlatform.cs" Line="72" Column="22" />
-      <File FileName="Assets/_Scripts/InGameMenu.cs" Line="128" Column="20" />
+      <File FileName="Assets/_Scripts/DestroySpawnBalls.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/FinalPlatform.cs" Line="6" Column="46" />
       <File FileName="Assets/_Scripts/ButtonColor.cs" Line="17" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
