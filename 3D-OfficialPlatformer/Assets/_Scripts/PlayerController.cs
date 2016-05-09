@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public float jumpHeight;
 	private bool grounded;
+	private bool secondJumpAble;
+	private bool secondJump;
 	private float speedlimit;
 	private float speedmax;
 	private Renderer ren;
@@ -23,14 +25,24 @@ public class PlayerController : MonoBehaviour {
 		speedmax = 15;
 		sideSpeed = 1;
 		isPaused = false;
+		secondJump = false;
+		secondJumpAble = false;
 	}
 
 
 
 	void Update(){
-		if(Input.GetKeyDown(KeyCode.Space) && (grounded == true )){
+		if(Input.GetKeyDown(KeyCode.Space) && (grounded == true)){
 			Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
 			rb.AddForce(jump);
+		}
+		else if(Input.GetKeyDown(KeyCode.Space) && (secondJumpAble == true)){
+			if(secondJump == true){
+				Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
+				rb.AddForce(jump);
+				secondJump = false;
+			}
+
 		}
 		else if(Input.GetKeyDown(KeyCode.P)){
 			Pause ();
@@ -56,6 +68,9 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.CompareTag("Ground")){
 
 			grounded = true;
+			if(secondJumpAble == true){
+				secondJump = true;
+			}
 		}
 		else if(other.gameObject.CompareTag("RespawnGame")){
 		//	Application.LoadLevel (Application.loadedLevel);
@@ -72,15 +87,17 @@ public class PlayerController : MonoBehaviour {
 		if(other.gameObject.CompareTag("Ground")){
 			
 				grounded = false;
-
 			}
 
-					}
+		}
 
 	void OnCollisionStay(Collision other){
 		if(other.gameObject.CompareTag("Ground")){
 
 			grounded = true;
+			if(secondJumpAble == true){
+				secondJump = true;
+			}
 
 		}
 	}
@@ -93,6 +110,13 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive(false);
 
 		}
+		else if(other.gameObject.CompareTag("JumpPowerUp")){
+					ren.material.color = Color.green;
+					jumpHeight *= 1.2f;
+					secondJumpAble = true;
+					other.gameObject.SetActive(false);
+
+				}
 
 
 	}
