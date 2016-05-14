@@ -142,4 +142,35 @@ public class InGameMenu : MonoBehaviour {
 		SceneManager.LoadScene(17);
 
 	}
+
+
+	public void Load17(){
+
+		SceneManager.LoadScene(18);
+
+	}
+
+	public void Load18(){
+
+		SceneManager.LoadScene(19);
+
+	}
+
+	public void Load19(){
+
+		SceneManager.LoadScene(20);
+
+	}
+
+	public void Load20(){
+
+		SceneManager.LoadScene(21);
+
+	}
+
+	public void Load21(){
+
+		SceneManager.LoadScene(22);
+
+	}
 }

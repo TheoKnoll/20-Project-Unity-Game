@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class FinalPlatform : MonoBehaviour {
-	private static int[] levelsBeat = new int[16];
+	private static int[] levelsBeat = new int[21/*Should eventually go to 21*/];
 	private static bool done = false;
 
 	void Awake(){

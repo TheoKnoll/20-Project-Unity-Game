@@ -37,7 +37,11 @@ public class PlayerController : MonoBehaviour {
 			rb.AddForce(jump);
 		}
 		else if(Input.GetKeyDown(KeyCode.Space) && (secondJumpAble == true)){
-			if(secondJump == true){
+			if(grounded == true){
+				Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
+				rb.AddForce(jump);
+			}
+			else if(secondJump == true){
 				Vector3 jump = new Vector3 (0.0f, jumpHeight, 0.0f);
 				rb.AddForce(jump);
 				secondJump = false;
@@ -111,6 +115,11 @@ public class PlayerController : MonoBehaviour {
 
 		}
 		else if(other.gameObject.CompareTag("JumpPowerUp")){
+			if(speedmax > 16){
+				speedmax /= 2;
+				speedlimit /= 2;
+				sideSpeed /= 2;
+			}
 					ren.material.color = Color.green;
 					jumpHeight *= 1.2f;
 					secondJumpAble = true;
@@ -137,5 +146,4 @@ public class PlayerController : MonoBehaviour {
 	void LoadMenu(){
 		SceneManager.LoadScene(1);
 	}
-
 }
