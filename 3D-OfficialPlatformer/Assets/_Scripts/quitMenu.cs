@@ -7,12 +7,14 @@ public class quitMenu : MonoBehaviour {
 	public Canvas quitMenuu;
 	public Button startB;
 	public Button quitB;
+
 	// Use this for initialization
 	void Start () {
 		quitMenuu = quitMenuu.GetComponent<Canvas> ();
 		startB = startB.GetComponent<Button> ();
 		quitB = quitB.GetComponent<Button> ();
 		quitMenuu.enabled = false;
+
 	}
 
 	public void ExitPress(){

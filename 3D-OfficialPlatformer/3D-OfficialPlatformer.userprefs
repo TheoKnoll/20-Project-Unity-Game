@@ -1,16 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/FinalPlatform.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Unity Games/SpaceShooter/Assets/_Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/_Scripts/PowerUpScripts.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/FinalPlatform.cs" Line="6" Column="46" />
-      <File FileName="Assets/_Scripts/PlayerController.cs" Line="68" Column="3" />
-      <File FileName="Assets/_Scripts/quitMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/InGameMenu.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/BallSpawn.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/ButtonColor.cs" Line="11" Column="3" />
+      <File FileName="Assets/_Scripts/PowerUpScripts.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/FinalPlatform.cs" Line="69" Column="3" />
+      <File FileName="Assets/_Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/quitMenu.cs" Line="18" Column="19" />
+      <File FileName="Assets/_Scripts/InGameMenu.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/CameraFollowPlayer.cs" Line="1" Column="1" />
       <File FileName="Assets/_Scripts/DestroySpawnBalls.cs" Line="1" Column="1" />
-      <File FileName="Assets/_Scripts/ButtonColor.cs" Line="1" Column="1" />
+      <File FileName="../../../../Unity Games/SpaceShooter/Assets/_Scripts/PlayerController.cs" Line="33" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

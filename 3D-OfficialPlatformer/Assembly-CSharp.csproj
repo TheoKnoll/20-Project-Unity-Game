@@ -49,6 +49,7 @@
      <Compile Include="Assets\_Scripts\ButtonColor.cs" />
      <Compile Include="Assets\_Scripts\CameraFollowPlayer.cs" />
      <Compile Include="Assets\_Scripts\DestroySpawnBalls.cs" />
+     <Compile Include="Assets\_Scripts\DontDestroy.cs" />
      <Compile Include="Assets\_Scripts\FinalPlatform.cs" />
      <Compile Include="Assets\_Scripts\InGameMenu.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
