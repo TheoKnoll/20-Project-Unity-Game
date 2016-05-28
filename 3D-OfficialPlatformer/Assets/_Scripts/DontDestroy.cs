@@ -14,8 +14,8 @@ public class DontDestroy : MonoBehaviour {
 		qm = qm.GetComponent<Canvas> ();
 		toggle = toggle.GetComponent<Button> ();
 	
-		playing = true;
-		AudioListener.pause = false;
+		//playing = true;
+		//AudioListener.pause = false;
 	}
 	// Update is called once per frame
 	public void musicToggle() {
